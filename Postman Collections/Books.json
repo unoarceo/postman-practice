@@ -211,7 +211,7 @@
 					"variable": [
 						{
 							"key": "orderid",
-							"value": "BN7Re4RHW-gRnDK6A8cwH"
+							"value": "{{orderid}}"
 						}
 					]
 				}
@@ -388,12 +388,12 @@
 	],
 	"variable": [
 		{
-			"id": "368b3be3-9a83-4c84-b4a2-58d56f95e6a3",
+			"id": "1c84a288-9b3a-4401-8b5c-de669614cc7f",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "0a97f4dd-b43b-4751-94ce-b86d93f5cb1a",
+			"id": "de1e0c8c-5b72-4216-9ed0-db80c9fa5271",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
