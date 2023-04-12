@@ -56,11 +56,24 @@
 				"url": "{{baseUrl}}/orders"
 			},
 			"response": []
+		},
+		{
+			"name": "Register API Client",
+			"id": "a15fc910-731d-4dfd-999f-b9a5f3c4daac",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "{{baseUrl}}/orders"
+			},
+			"response": []
 		}
 	],
 	"variable": [
 		{
-			"id": "709c10c8-601a-4c0b-b02a-559d36c29f70",
+			"id": "ca9b5a61-b4b8-4fbf-873b-21f718b2be05",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		}
