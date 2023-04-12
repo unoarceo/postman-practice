@@ -51,7 +51,11 @@
 						"exec": [
 							"pm.test(\"Status code is 201\", () => {\r",
 							"    pm.response.to.have.status(201);\r",
-							"});"
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"\r",
+							"pm.collectionVariables.set(\"accessToken\", response.accessToken);"
 						],
 						"type": "text/javascript"
 					}
@@ -441,12 +445,12 @@
 	],
 	"variable": [
 		{
-			"id": "820b5a5c-837b-4cf9-aad8-b890b5b27c36",
+			"id": "ac4f6f02-f7cc-4a4b-9202-6080964f2003",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "7fb6c7f9-2f41-4fb7-8a20-c78da6e57a56",
+			"id": "2f7e4d9f-d425-4c17-9af6-5e9631bf7d43",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
