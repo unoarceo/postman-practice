@@ -75,14 +75,14 @@
 						}
 					}
 				},
-				"url": "{{baseUrl}}/api-clients/"
+				"url": "{{baseUrl}}/api-clients"
 			},
 			"response": []
 		}
 	],
 	"variable": [
 		{
-			"id": "6f7b17e2-e90c-4d6b-b6fa-03170d0d2590",
+			"id": "2d9963f0-53d6-4a17-ba75-6357505236f4",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		}
