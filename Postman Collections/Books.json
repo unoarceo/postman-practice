@@ -95,11 +95,39 @@
 			"response": []
 		}
 	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "dfb2908d-3d7a-47df-bc82-f2c573844ab9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "04178c8b-c39e-444a-90a5-45ae80ee8ffb",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
 	"variable": [
 		{
-			"id": "37f1665b-413c-44d0-a576-62a1eb140ab8",
+			"id": "05c3fc2c-e377-4288-ab41-a0a0fbefef49",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
+		},
+		{
+			"id": "c66c4d06-707f-4046-a162-545c83c8d1c8",
+			"key": "accessToken",
+			"value": "a11830e63f7111c9bd6009534de641266625098b9bc05f62038de72752414727",
+			"type": "string"
 		}
 	]
 }
