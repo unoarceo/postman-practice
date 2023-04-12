@@ -53,14 +53,14 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": ""
+				"url": "{{baseUrl}}/orders"
 			},
 			"response": []
 		}
 	],
 	"variable": [
 		{
-			"id": "ade6cf4f-c9d9-4645-91e7-e68bdb31ce03",
+			"id": "822e0241-eb37-4ba4-8e71-8fe1dcee2347",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		}
