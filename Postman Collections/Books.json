@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "API Status",
-			"_postman_id": "73913dce-c73b-4679-8951-e061438eff4b",
+			"id": "73913dce-c73b-4679-8951-e061438eff4b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -20,7 +20,7 @@
 		},
 		{
 			"name": "List of Books",
-			"_postman_id": "dc26a99e-349c-4d88-8e6d-c80926cd5248",
+			"id": "dc26a99e-349c-4d88-8e6d-c80926cd5248",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -30,14 +30,26 @@
 				"url": "{{baseUrl}}/books"
 			},
 			"response": []
+		},
+		{
+			"name": "Get single book",
+			"id": "92cfb661-b350-4b35-b854-9e734d6f62b8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": ""
+			},
+			"response": []
 		}
 	],
 	"variable": [
 		{
-			"id": "133f38fe-72d6-4222-bdfa-feb8708261e2",
+			"id": "de13e8cc-e295-44f6-81ac-827015f844b3",
 			"key": "baseUrl",
-			"value": "https://simple-books-api.glitch.me",
-			"type": "string"
+			"value": "https://simple-books-api.glitch.me"
 		}
 	]
 }
