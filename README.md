@@ -1,2 +1,2 @@
 # postman-practice
-Practicing postman
+Backup of collections from postman.
