@@ -73,6 +73,34 @@
 			"response": []
 		},
 		{
+			"name": "Get all book orders",
+			"id": "7e5e5fc6-fd05-4954-829a-1b3db57b172c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{accessToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bookId\": 1,\r\n  \"customerName\": \"{{$randomFullName}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/orders"
+			},
+			"response": []
+		},
+		{
 			"name": "Register API Client",
 			"id": "a15fc910-731d-4dfd-999f-b9a5f3c4daac",
 			"protocolProfileBehavior": {
@@ -123,12 +151,12 @@
 	],
 	"variable": [
 		{
-			"id": "f875cf68-3641-49f3-8d06-ca11bad081a6",
+			"id": "c9a42e07-9296-4635-81a0-a5b843a8e816",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "6698d9bb-8b9c-4ee2-8b5c-10185a3159e6",
+			"id": "36db14ff-5b61-410d-95a1-f82ac4de07d2",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
