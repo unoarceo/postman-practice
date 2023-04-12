@@ -66,14 +66,14 @@
 			"request": {
 				"method": "POST",
 				"header": [],
-				"url": "{{baseUrl}}/orders"
+				"url": "{{baseUrl}}/api-clients/"
 			},
 			"response": []
 		}
 	],
 	"variable": [
 		{
-			"id": "ca9b5a61-b4b8-4fbf-873b-21f718b2be05",
+			"id": "4a83451b-e885-43ef-b6a5-5a2e6226dfa8",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		}
