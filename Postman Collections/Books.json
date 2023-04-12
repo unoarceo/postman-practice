@@ -51,8 +51,23 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{accessToken}}"
+					}
+				},
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bookId\": 1,\r\n  \"customerName\": \"John\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": "{{baseUrl}}/orders"
 			},
 			"response": []
@@ -82,7 +97,7 @@
 	],
 	"variable": [
 		{
-			"id": "2d9963f0-53d6-4a17-ba75-6357505236f4",
+			"id": "37f1665b-413c-44d0-a576-62a1eb140ab8",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		}
