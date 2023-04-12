@@ -85,7 +85,7 @@
 						"token": "{{accessToken}}"
 					}
 				},
-				"method": "POST",
+				"method": "GET",
 				"header": [],
 				"url": "{{baseUrl}}/orders"
 			},
@@ -142,12 +142,12 @@
 	],
 	"variable": [
 		{
-			"id": "ab901fcc-b2cc-4b80-8834-46c5a12b330a",
+			"id": "4b090d91-47c3-43b7-9776-6a096f926126",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "06e85215-abff-43f3-814d-378eb198ddb4",
+			"id": "b6620381-23a0-41cd-87f8-e4d8af7b20ea",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
