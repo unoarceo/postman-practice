@@ -106,7 +106,22 @@
 				},
 				"method": "GET",
 				"header": [],
-				"url": "{{baseUrl}}/orders"
+				"url": {
+					"raw": "{{baseUrl}}/orders/:orderid",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"orders",
+						":orderid"
+					],
+					"variable": [
+						{
+							"key": "orderid",
+							"value": "H1jpjBc3RGHFohlTRZi43"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -161,12 +176,12 @@
 	],
 	"variable": [
 		{
-			"id": "e648157f-0d5b-4190-9fbe-a5f6ad072f89",
+			"id": "b068ca8b-0ec5-46f0-8e17-0964eadafcb9",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "bf246d86-f7f0-4ed8-bf85-458d50930b2d",
+			"id": "7857f7b0-c298-45ce-b7d1-77d2d4a4b86b",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
