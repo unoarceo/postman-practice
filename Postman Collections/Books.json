@@ -43,11 +43,24 @@
 				"url": "{{baseUrl}}/books/1"
 			},
 			"response": []
+		},
+		{
+			"name": "Order book",
+			"id": "658aac8d-67f3-4759-ac12-fc9e06db80a3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": ""
+			},
+			"response": []
 		}
 	],
 	"variable": [
 		{
-			"id": "1b07b0d0-7bf5-4e05-8f8e-9f5a559e26c3",
+			"id": "ade6cf4f-c9d9-4645-91e7-e68bdb31ce03",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		}
