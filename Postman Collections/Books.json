@@ -108,7 +108,7 @@
 							"});\r",
 							"\r",
 							"const response = pm.response.json();\r",
-							"pm.globals.set(\"orderid\", response.orderid);"
+							"pm.globals.set(\"orderid\", response.orderId);"
 						],
 						"type": "text/javascript"
 					}
@@ -391,12 +391,12 @@
 	],
 	"variable": [
 		{
-			"id": "5bfdbb24-56aa-4178-9dcc-05c28baf07c8",
+			"id": "70954675-6308-46c3-8580-51b08be7f87e",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "50729c64-c777-46aa-b62c-033d749f3b6a",
+			"id": "d08da269-4fcb-4c79-914f-ed185d48a615",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
