@@ -388,12 +388,12 @@
 	],
 	"variable": [
 		{
-			"id": "1c84a288-9b3a-4401-8b5c-de669614cc7f",
+			"id": "facbe440-a11e-4b1e-8d7e-08ead02ac93e",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "de1e0c8c-5b72-4216-9ed0-db80c9fa5271",
+			"id": "4de69a33-9baa-4643-8641-3b3ff99b1370",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
