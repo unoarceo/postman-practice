@@ -142,7 +142,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"customerName\": \"Pukita Mekoto\"\r\n}",
+					"raw": "{\r\n  \"customerName\": \"John {{$randomLastName}}\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -219,12 +219,12 @@
 	],
 	"variable": [
 		{
-			"id": "59c15258-365f-494d-9012-689b5e44081b",
+			"id": "7cc081ec-e5ca-434b-85c1-9a7f53cfc78c",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "c5219623-4a7a-4e87-a69c-7b9d0563d088",
+			"id": "50b8ad54-68ff-4cf7-b45e-69eaba5cbf20",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
