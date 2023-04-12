@@ -61,7 +61,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"bookId\": 2,\r\n  \"customerName\": \"{{$randomFullName}}\"\r\n}",
+					"raw": "{\r\n  \"bookId\": 1,\r\n  \"customerName\": \"{{$randomFullName}}\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -123,12 +123,12 @@
 	],
 	"variable": [
 		{
-			"id": "1720ad15-009a-4da7-a7ef-ef85dea26dc5",
+			"id": "f875cf68-3641-49f3-8d06-ca11bad081a6",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "76825272-c89a-484a-a846-99e6cf27f018",
+			"id": "6698d9bb-8b9c-4ee2-8b5c-10185a3159e6",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
