@@ -66,6 +66,15 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"clientName\": \"Postman\",\r\n   \"clientEmail\": \"valentin@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": "{{baseUrl}}/api-clients/"
 			},
 			"response": []
@@ -73,7 +82,7 @@
 	],
 	"variable": [
 		{
-			"id": "4a83451b-e885-43ef-b6a5-5a2e6226dfa8",
+			"id": "8c576257-817a-4194-b27c-f6819f92ceeb",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		}
