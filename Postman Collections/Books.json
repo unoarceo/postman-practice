@@ -40,14 +40,14 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": ""
+				"url": "{{baseUrl}}/books/1"
 			},
 			"response": []
 		}
 	],
 	"variable": [
 		{
-			"id": "de13e8cc-e295-44f6-81ac-827015f844b3",
+			"id": "1b07b0d0-7bf5-4e05-8f8e-9f5a559e26c3",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		}
