@@ -55,7 +55,9 @@
 							"\r",
 							"const response = pm.response.json();\r",
 							"\r",
-							"const nonFictionBooks = response.filter((book) ==> book.available === true);"
+							"const nonFictionBooks = response.filter((book) => book.available === true);\r",
+							"\r",
+							"pm.globals.set(\"bookId\", response[0].id);"
 						],
 						"type": "text/javascript"
 					}
@@ -68,7 +70,21 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "{{baseUrl}}/books"
+				"url": {
+					"raw": "{{baseUrl}}/books?type=non-fiction",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "non-fiction"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -395,12 +411,12 @@
 	],
 	"variable": [
 		{
-			"id": "18982911-a1cb-4145-b90b-c38adff5a135",
+			"id": "8878c2bc-a2ca-47fd-b228-86bf944bb98c",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "39623ab0-40b3-4c93-a1d2-532251c88ad2",
+			"id": "29eaa099-855f-45c8-8b41-eebfdf48b9c2",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
