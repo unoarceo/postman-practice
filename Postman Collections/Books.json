@@ -24,7 +24,9 @@
 							"\r",
 							"pm.test(\"Status should be OK\", () => {\r",
 							"    pm.expect(response.status).equals(\"OK\");\r",
-							"});"
+							"});\r",
+							"\r",
+							"postman.setNextRequest(\"List of Books\");"
 						],
 						"type": "text/javascript"
 					}
@@ -445,12 +447,12 @@
 	],
 	"variable": [
 		{
-			"id": "fe9c7ac8-fbdd-4fbb-af40-53d4cac33685",
+			"id": "b8865581-59b2-47d0-b3cf-4e3a7882b44d",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "74105163-b4f0-4427-a364-d1fc65fec01e",
+			"id": "68e1de4b-7687-4a6c-b55b-f09c5cecad5d",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
