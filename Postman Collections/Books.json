@@ -277,6 +277,20 @@
 		},
 		{
 			"name": "Delete order",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "57bc3e3c-954c-411b-9021-3134e3d9bbfb",
+						"exec": [
+							"pm.test(\"Status code is 204\", () => {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "a63c3895-6225-446e-96ec-611ccf7e13ec",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -301,9 +315,8 @@
 					],
 					"variable": [
 						{
-							"id": "3373647d-747c-4dfc-bf74-37466a30b465",
 							"key": "orderid",
-							"value": "QNlmyErDk6ijYcMffKkm6"
+							"value": "BN7Re4RHW-gRnDK6A8cwH"
 						}
 					]
 				}
@@ -361,12 +374,12 @@
 	],
 	"variable": [
 		{
-			"id": "d9e54dde-8bba-4a83-90ff-2248f58b7e8a",
+			"id": "3ee3aee5-bacd-41cd-84e0-fb8c93b4a5cf",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "01b4735c-9a21-477d-a91d-9b7f986f91c0",
+			"id": "3897aff4-1eda-4de3-9501-261204b2f772",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
