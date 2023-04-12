@@ -139,6 +139,20 @@
 		},
 		{
 			"name": "Get all book orders",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "46996174-62a1-4fff-a09f-5603787ed8ca",
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "7e5e5fc6-fd05-4954-829a-1b3db57b172c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -333,12 +347,12 @@
 	],
 	"variable": [
 		{
-			"id": "4d6a5c6d-451f-41cc-b6f5-fffc89e52766",
+			"id": "d5d3f58c-f8fc-4165-8534-1a48cec5affc",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "a23a087e-6a15-4898-a458-653bb2c67fd7",
+			"id": "96b0083c-1c92-4a8f-8fa9-b7785230bef3",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
