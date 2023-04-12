@@ -325,6 +325,20 @@
 		},
 		{
 			"name": "Register API Client",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6626af1f-7e5e-4d95-8d1e-b7feb61fc8bb",
+						"exec": [
+							"pm.test(\"Status code is 201\", () => {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "a15fc910-731d-4dfd-999f-b9a5f3c4daac",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -334,7 +348,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"clientName\": \"Arjay\",\r\n   \"clientEmail\": \"arjay.m.arceo@gmail.coms\"\r\n}",
+					"raw": "{\r\n   \"clientName\": \"Arjay\",\r\n   \"clientEmail\": \"arjay.m.arceo@gmail.com99\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -374,12 +388,12 @@
 	],
 	"variable": [
 		{
-			"id": "3ee3aee5-bacd-41cd-84e0-fb8c93b4a5cf",
+			"id": "368b3be3-9a83-4c84-b4a2-58d56f95e6a3",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "3897aff4-1eda-4de3-9501-261204b2f772",
+			"id": "0a97f4dd-b43b-4751-94ce-b86d93f5cb1a",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
