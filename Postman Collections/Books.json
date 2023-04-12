@@ -51,6 +51,19 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "{{baseUrl}}/orders"
+			},
+			"response": []
+		},
+		{
+			"name": "Order book Copy",
+			"id": "28654d61-0390-4bf8-a65c-e5e1b8306d59",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
 				"method": "GET",
 				"header": [],
 				"url": "{{baseUrl}}/orders"
@@ -60,7 +73,7 @@
 	],
 	"variable": [
 		{
-			"id": "822e0241-eb37-4ba4-8e71-8fe1dcee2347",
+			"id": "083f6d28-0f86-40da-a4cf-64c29417e191",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		}
