@@ -98,6 +98,11 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"pm.test(\"Book is in stock\", () => {\r",
+							"    pm.expect(response[\"current-stock\"]).greaterThan(0);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -426,12 +431,12 @@
 	],
 	"variable": [
 		{
-			"id": "72fa9a49-bb63-432c-b842-2f10d36d066a",
+			"id": "ddf32fb6-129b-4da2-89ac-3dfc04b6b156",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "947979b1-9183-4f3f-bcb8-bff47fc678ed",
+			"id": "f7e6e28a-34ba-49c1-9a51-b70fe97b88f1",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
