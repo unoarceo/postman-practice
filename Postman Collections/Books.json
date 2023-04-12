@@ -42,6 +42,42 @@
 			"response": []
 		},
 		{
+			"name": "Register API Client",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6626af1f-7e5e-4d95-8d1e-b7feb61fc8bb",
+						"exec": [
+							"pm.test(\"Status code is 201\", () => {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "a15fc910-731d-4dfd-999f-b9a5f3c4daac",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"clientName\": \"Arjay\",\r\n   \"clientEmail\": \"{{$randomEmail}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/api-clients"
+			},
+			"response": []
+		},
+		{
 			"name": "List of Books",
 			"event": [
 				{
@@ -375,42 +411,6 @@
 				}
 			},
 			"response": []
-		},
-		{
-			"name": "Register API Client",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "6626af1f-7e5e-4d95-8d1e-b7feb61fc8bb",
-						"exec": [
-							"pm.test(\"Status code is 201\", () => {\r",
-							"    pm.response.to.have.status(201);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "a15fc910-731d-4dfd-999f-b9a5f3c4daac",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n   \"clientName\": \"Arjay\",\r\n   \"clientEmail\": \"arjay.m.arceo@gmail.com99\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{baseUrl}}/api-clients"
-			},
-			"response": []
 		}
 	],
 	"auth": {
@@ -441,12 +441,12 @@
 	],
 	"variable": [
 		{
-			"id": "ad396464-56cd-4af8-b58a-4de5450ba3af",
+			"id": "820b5a5c-837b-4cf9-aad8-b890b5b27c36",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "62fa5d9a-eb4b-43cd-aecd-785ce74a5fe2",
+			"id": "7fb6c7f9-2f41-4fb7-8a20-c78da6e57a56",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
