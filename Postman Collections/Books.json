@@ -140,6 +140,15 @@
 				},
 				"method": "PATCH",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerName\": \"Pukita Mekoto\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "{{baseUrl}}/orders/:orderid",
 					"host": [
@@ -151,9 +160,8 @@
 					],
 					"variable": [
 						{
-							"id": "f0be26fa-18d6-451a-b2cc-7ba7e743902c",
 							"key": "orderid",
-							"value": "H1jpjBc3RGHFohlTRZi43"
+							"value": "QNlmyErDk6ijYcMffKkm6"
 						}
 					]
 				}
@@ -211,12 +219,12 @@
 	],
 	"variable": [
 		{
-			"id": "b6727176-6b5c-4759-8c1a-30e056db1307",
+			"id": "28fc209c-a833-48ca-9223-c8731b858a7e",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "2dfff60c-06e3-4e3b-983a-91386bfdaa22",
+			"id": "3870f7bb-2301-4234-9d07-47fbd3dfcf76",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
