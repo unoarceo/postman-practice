@@ -51,7 +51,11 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
-							"});"
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"\r",
+							"const nonFictionBooks = response.filter((book) ==> book.available === true);"
 						],
 						"type": "text/javascript"
 					}
@@ -391,12 +395,12 @@
 	],
 	"variable": [
 		{
-			"id": "d9d05a5e-af20-4e35-97e8-891d4caeb51a",
+			"id": "18982911-a1cb-4145-b90b-c38adff5a135",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "4eb46909-196c-4b9c-800c-4c0d5fc1e1ab",
+			"id": "39623ab0-40b3-4c93-a1d2-532251c88ad2",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
