@@ -7,6 +7,29 @@
 	"item": [
 		{
 			"name": "API Status",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "99e0d2f3-9deb-44a5-9f49-985a5f074370",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"\r",
+							"console.log(response.status);\r",
+							"console.log(response['status']);\r",
+							"\r",
+							"pm.test(\"Status should be OK\", () => {\r",
+							"    pm.expect(response.status).equals(\"OK\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "73913dce-c73b-4679-8951-e061438eff4b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -254,12 +277,12 @@
 	],
 	"variable": [
 		{
-			"id": "71e8238f-3447-46fb-bea7-03d78c9dd4ce",
+			"id": "5581f3da-0df6-4d61-a5c9-0a2bef3985a7",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "443decc8-7c2c-4e14-8df4-ee9217ba9c7e",
+			"id": "c9692777-ce51-41e5-a170-d3df096cdd40",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
