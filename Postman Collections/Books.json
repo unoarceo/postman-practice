@@ -57,7 +57,17 @@
 							"\r",
 							"const nonFictionBooks = response.filter((book) => book.available === true);\r",
 							"\r",
-							"pm.globals.set(\"bookId\", response[0].id);"
+							"const book = nonFictionBooks[0];\r",
+							"\r",
+							"//if (book)\r",
+							"    pm.globals.set(\"bookId\", book.id);\r",
+							"\r",
+							"pm.test(\"Book found\", () => {\r",
+							"    pm.expect(book).to.be.an(\"object\");\r",
+							"    pm.expect(book.available).to.be.true;\r",
+							"    pm.expect(book.available).equals(true);\r",
+							"    pm.expect(book.type).equals(\"non-fiction\");\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -431,12 +441,12 @@
 	],
 	"variable": [
 		{
-			"id": "ddf32fb6-129b-4da2-89ac-3dfc04b6b156",
+			"id": "ad396464-56cd-4af8-b58a-4de5450ba3af",
 			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me"
 		},
 		{
-			"id": "f7e6e28a-34ba-49c1-9a51-b70fe97b88f1",
+			"id": "62fa5d9a-eb4b-43cd-aecd-785ce74a5fe2",
 			"key": "accessToken",
 			"value": "-----",
 			"type": "string"
